@@ -1,0 +1,76 @@
+systemd-+-ModemManager---2*[{ModemManager}]
+        |-NetworkManager---2*[{NetworkManager}]
+        |-accounts-daemon---2*[{accounts-daemon}]
+        |-acpid
+        |-agetty
+        |-avahi-daemon---avahi-daemon
+        |-blueman-tray---2*[{blueman-tray}]
+        |-colord---2*[{colord}]
+        |-cron
+        |-cups-browsed---2*[{cups-browsed}]
+        |-cupsd
+        |-dbus-daemon
+        |-gnome-keyring-d---3*[{gnome-keyring-d}]
+        |-2*[kerneloops]
+        |-lightdm-+-Xorg---5*[{Xorg}]
+        |         |-lightdm-+-xfce4-session-+-Thunar---2*[{Thunar}]
+        |         |         |               |-applet.py
+        |         |         |               |-blueman-applet---3*[{blueman-applet}]
+        |         |         |               |-nm-applet---3*[{nm-applet}]
+        |         |         |               |-polkit-gnome-au---2*[{polkit-gnome-au}]
+        |         |         |               |-ssh-agent
+        |         |         |               |-update-notifier---3*[{update-notifier}]
+        |         |         |               |-xfce4-panel-+-panel-1-whisker---2*[{panel-1-whisker}]
+        |         |         |               |             |-panel-10-pulsea---2*[{panel-10-pulsea}]
+        |         |         |               |             |-panel-5-systray---2*[{panel-5-systray}]
+        |         |         |               |             |-panel-6-notific---2*[{panel-6-notific}]
+        |         |         |               |             |-panel-7-indicat---2*[{panel-7-indicat}]
+        |         |         |               |             |-panel-8-statusn---2*[{panel-8-statusn}]
+        |         |         |               |             |-panel-9-power-m---2*[{panel-9-power-m}]
+        |         |         |               |             `-2*[{xfce4-panel}]
+        |         |         |               |-xfdesktop---2*[{xfdesktop}]
+        |         |         |               |-xfwm4---6*[{xfwm4}]
+        |         |         |               |-xiccd---2*[{xiccd}]
+        |         |         |               `-6*[{xfce4-session}]
+        |         |         `-2*[{lightdm}]
+        |         `-2*[{lightdm}]
+        |-networkd-dispat
+        |-polkitd---2*[{polkitd}]
+        |-rsyslogd---3*[{rsyslogd}]
+        |-rtkit-daemon---2*[{rtkit-daemon}]
+        |-systemd-+-(sd-pam)
+        |         |-at-spi-bus-laun-+-dbus-daemon
+        |         |                 `-3*[{at-spi-bus-laun}]
+        |         |-at-spi2-registr---2*[{at-spi2-registr}]
+        |         |-dbus-daemon
+        |         |-dconf-service---2*[{dconf-service}]
+        |         |-gvfs-afc-volume---3*[{gvfs-afc-volume}]
+        |         |-gvfs-goa-volume---2*[{gvfs-goa-volume}]
+        |         |-gvfs-gphoto2-vo---2*[{gvfs-gphoto2-vo}]
+        |         |-gvfs-mtp-volume---2*[{gvfs-mtp-volume}]
+        |         |-gvfs-udisks2-vo---3*[{gvfs-udisks2-vo}]
+        |         |-gvfsd-+-gvfsd-trash---2*[{gvfsd-trash}]
+        |         |       `-2*[{gvfsd}]
+        |         |-gvfsd-fuse---5*[{gvfsd-fuse}]
+        |         |-gvfsd-metadata---2*[{gvfsd-metadata}]
+        |         |-indicator-messa---4*[{indicator-messa}]
+        |         |-obexd
+        |         |-pulseaudio---3*[{pulseaudio}]
+        |         |-tumblerd---4*[{tumblerd}]
+        |         |-xfce4-notifyd---2*[{xfce4-notifyd}]
+        |         |-xfce4-screensav---2*[{xfce4-screensav}]
+        |         `-xfconfd---2*[{xfconfd}]
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-resolve
+        |-systemd-timesyn---{systemd-timesyn}
+        |-systemd-udevd
+        |-udisksd---4*[{udisksd}]
+        |-unattended-upgr---{unattended-upgr}
+        |-upowerd---2*[{upowerd}]
+        |-whoopsie---2*[{whoopsie}]
+        |-wpa_supplicant
+        |-xfce4-power-man---2*[{xfce4-power-man}]
+        |-xfce4-terminal-+-bash---pstree
+        |                `-3*[{xfce4-terminal}]
+        `-xfsettingsd---2*[{xfsettingsd}]
